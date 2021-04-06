@@ -1,5 +1,5 @@
 # Dictionaire des valeurs en base 10
-bin = {
+base_2 = {
     '1':'2048',
     '2': '1024',
     '3': '512',
@@ -20,10 +20,10 @@ while True:
     request_bin = input(' > ')
     request_split = request_bin.split('.')
     request_length = len(request_split)
-    index += len(bin) - request_length
+    index += len(base_2) - request_length
 
     for i in request_split:
         index += 1
         if i == '1':
-            result += int(bin.get(str(index)))
+            result += int(base_2.get(str(index)))
     print(f'\n| {result} \n')
