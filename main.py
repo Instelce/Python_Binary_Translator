@@ -42,7 +42,7 @@ while True:
                 warning = True
                 break
         if warning == False:
-            print(f'\n| {result_2t10} \n')
+            print('\n| '+ result_2t10 +' \n')
 
     # Conversion base 10 à base 2
     elif trad_choice == '2':
